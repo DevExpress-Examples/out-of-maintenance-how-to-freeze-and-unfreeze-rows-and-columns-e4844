@@ -15,7 +15,7 @@ namespace WindowsFormsApplication1 {
             Worksheet worksheet = workbook.Worksheets.ActiveWorksheet;
 
             // Access the cell range that is currently visible.
-            Range visibleRange = spreadsheetControl1.VisibleRange;
+            CellRange visibleRange = spreadsheetControl1.VisibleRange;
 
             // Freeze the top visible row.
             worksheet.FreezeRows(0, visibleRange);
@@ -26,7 +26,7 @@ namespace WindowsFormsApplication1 {
             Worksheet worksheet = workbook.Worksheets.ActiveWorksheet;
 
             // Access the cell range that is currently visible.
-            Range visibleRange = spreadsheetControl1.VisibleRange;
+            CellRange visibleRange = spreadsheetControl1.VisibleRange;
 
             // Freeze the first visible column.
             worksheet.FreezeColumns(0, visibleRange);
@@ -38,7 +38,7 @@ namespace WindowsFormsApplication1 {
             Worksheet worksheet = workbook.Worksheets.ActiveWorksheet;
 
             // Access the cell range that is currently visible.
-            Range visibleRange = spreadsheetControl1.VisibleRange;
+            CellRange visibleRange = spreadsheetControl1.VisibleRange;
 
             // Access the active cell. 
             Cell activeCell = spreadsheetControl1.ActiveCell;
