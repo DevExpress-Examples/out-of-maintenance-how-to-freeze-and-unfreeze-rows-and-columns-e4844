@@ -1,6 +1,4 @@
-﻿Imports Microsoft.VisualBasic
-Imports System
-Namespace WindowsFormsApplication1
+﻿Namespace WindowsFormsApplication1
 	Partial Public Class Form1
 		''' <summary>
 		''' Required designer variable.
@@ -76,7 +74,8 @@ Namespace WindowsFormsApplication1
 			Me.buttonUnfreezePanes.TabIndex = 3
 			Me.buttonUnfreezePanes.Text = "Unfreeze Panes"
 			Me.buttonUnfreezePanes.UseVisualStyleBackColor = True
-'			Me.buttonUnfreezePanes.Click += New System.EventHandler(Me.buttonUnfreezePanes_Click);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.buttonUnfreezePanes.Click += new System.EventHandler(this.buttonUnfreezePanes_Click);
 			' 
 			' buttonFreezePanes
 			' 
@@ -86,7 +85,8 @@ Namespace WindowsFormsApplication1
 			Me.buttonFreezePanes.TabIndex = 2
 			Me.buttonFreezePanes.Text = "Freeze Panes"
 			Me.buttonFreezePanes.UseVisualStyleBackColor = True
-'			Me.buttonFreezePanes.Click += New System.EventHandler(Me.buttonFreezePanes_Click);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.buttonFreezePanes.Click += new System.EventHandler(this.buttonFreezePanes_Click);
 			' 
 			' buttonFreezeColumn
 			' 
@@ -96,7 +96,8 @@ Namespace WindowsFormsApplication1
 			Me.buttonFreezeColumn.TabIndex = 1
 			Me.buttonFreezeColumn.Text = "Freeze Left Column"
 			Me.buttonFreezeColumn.UseVisualStyleBackColor = True
-'			Me.buttonFreezeColumn.Click += New System.EventHandler(Me.buttonFreezeColumn_Click);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.buttonFreezeColumn.Click += new System.EventHandler(this.buttonFreezeColumn_Click);
 			' 
 			' buttonFreezeRow
 			' 
@@ -106,7 +107,8 @@ Namespace WindowsFormsApplication1
 			Me.buttonFreezeRow.TabIndex = 0
 			Me.buttonFreezeRow.Text = "Freeze Top Row"
 			Me.buttonFreezeRow.UseVisualStyleBackColor = True
-'			Me.buttonFreezeRow.Click += New System.EventHandler(Me.buttonFreezeRow_Click);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.buttonFreezeRow.Click += new System.EventHandler(this.buttonFreezeRow_Click);
 			' 
 			' Form1
 			' 

@@ -1,11 +1,11 @@
-﻿Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.Windows.Forms
 Imports DevExpress.Spreadsheet
 
 Namespace WindowsFormsApplication1
 	Partial Public Class Form1
 		Inherits Form
+
 		Private workbook As IWorkbook
 		Public Sub New()
 			InitializeComponent()
@@ -16,22 +16,22 @@ Namespace WindowsFormsApplication1
 			'Access the active worksheet.
 			Dim worksheet As Worksheet = workbook.Worksheets.ActiveWorksheet
 
-            ' Access the cell range that is currently visible.
-            Dim visibleRange As CellRange = spreadsheetControl1.VisibleRange
+			' Access the cell range that is currently visible.
+			Dim visibleRange As CellRange = spreadsheetControl1.VisibleRange
 
-            ' Freeze the top visible row.
-            worksheet.FreezeRows(0, visibleRange)
+			' Freeze the top visible row.
+			worksheet.FreezeRows(0, visibleRange)
 		End Sub
 
 		Private Sub buttonFreezeColumn_Click(ByVal sender As Object, ByVal e As EventArgs) Handles buttonFreezeColumn.Click
 			'Access the active worksheet.
 			Dim worksheet As Worksheet = workbook.Worksheets.ActiveWorksheet
 
-            ' Access the cell range that is currently visible.
-            Dim visibleRange As CellRange = spreadsheetControl1.VisibleRange
+			' Access the cell range that is currently visible.
+			Dim visibleRange As CellRange = spreadsheetControl1.VisibleRange
 
-            ' Freeze the first visible column.
-            worksheet.FreezeColumns(0, visibleRange)
+			' Freeze the first visible column.
+			worksheet.FreezeColumns(0, visibleRange)
 		End Sub
 
 		#Region "#FreezePanes"
@@ -39,17 +39,17 @@ Namespace WindowsFormsApplication1
 			'Access the active worksheet.
 			Dim worksheet As Worksheet = workbook.Worksheets.ActiveWorksheet
 
-            ' Access the cell range that is currently visible.
-            Dim visibleRange As CellRange = spreadsheetControl1.VisibleRange
+			' Access the cell range that is currently visible.
+			Dim visibleRange As CellRange = spreadsheetControl1.VisibleRange
 
-            ' Access the active cell. 
-            Dim activeCell As Cell = spreadsheetControl1.ActiveCell
+			' Access the active cell. 
+			Dim activeCell As Cell = spreadsheetControl1.ActiveCell
 
 			Dim rowOffset As Integer = activeCell.RowIndex - visibleRange.TopRowIndex - 1
 			Dim columnOffset As Integer = activeCell.ColumnIndex - visibleRange.LeftColumnIndex - 1
 
 			' If the active cell is outside the visible range of cells, no rows and columns are frozen.
-			If (Not visibleRange.IsIntersecting(activeCell)) Then
+			If Not visibleRange.IsIntersecting(activeCell) Then
 				Return
 			End If
 
